@@ -3,7 +3,7 @@ package factory;
 public class FabricaEletrico extends Factory{
 
     @Override
-    Carro tipoDeCombustivel(String nomeCarro) {
+    Carro carroDesejado(String nomeCarro) {
         return switch (nomeCarro) {
             case "Dolphi" -> new Byd(95, "Eletrico", "Prata", "Novo");
             case "Shark" -> new Byd(437, "Eletrico", "Branco", "Seminovo");

@@ -3,7 +3,7 @@ package factory;
 public abstract class Factory {
 
     public Carro criando(String nomeCarro){
-        Carro carro = tipoDeCombustivel(nomeCarro);
+        Carro carro = carroDesejado(nomeCarro);
         carro = venderCarro(carro);
         return carro;
     }
@@ -14,6 +14,6 @@ public abstract class Factory {
         return carro;
     }
 
-    abstract Carro tipoDeCombustivel(String nomeCarro);
+    abstract Carro carroDesejado(String nomeCarro);
 
 }

@@ -2,9 +2,8 @@ package factory;
 
 public class FabricaCombustao extends Factory{
 
-
     @Override
-    Carro tipoDeCombustivel(String nomeCarro) {
+    Carro carroDesejado(String nomeCarro) {
         return switch (nomeCarro) {
             case "Civic" -> new Honda(297, "Gasolina", "Branco", "Novo");
             case "Hrv" -> new Honda(177, "Flex", "Vermelho", "Semi novo");
